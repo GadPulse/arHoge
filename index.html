@@ -1,38 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ARアプリ</title>
-    <link href="./bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="./stylesheets/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Three.js　読み込み-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+    <!-- AR.js ライブラリの読み込み-->
+    <script src="https://jeromeetienne.github.io/AR.js/three.js/build/ar.js"></script>
+    <title>AR app sample</title>
   </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Tpggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Sample </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#howto">HowTo</a></li>
-            <li><a href="#link">Link</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div role="main" class="container theme-showcase bg-gray">
-      <div class="jumbotron"></div>
-      <div class="page-header">
-        <h1>About<span id="about"></span></h1>
-        <p>Hello World</p>
-      </div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  <body style="margin:0px; overflow:hidden;">
+    <script src="main.js"></script>
   </body>
+  <canvas width="1920" height="1020" style="width: 880px; height: 660px; position: absolute; top: 0px; left: 0px; margin-left: -234px; margin-top: 0px;"></canvas>
+  <video autoplay="" muted="" playsinline="" style="width: 880px; height: 660px; position: absolute; top: 0px; left: 0px; z-index: -2; margin-left: -234px; margin-top: 0px;"></video>
 </html>
