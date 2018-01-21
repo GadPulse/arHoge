@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Three.js　読み込み-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-    <!-- AR.js ライブラリの読み込み-->
-    <script src="https://jeromeetienne.github.io/AR.js/three.js/build/ar.js"></script>
-    <title>AR app sample</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Souter? demo</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/stats.min.js"></script>
+    <script src="./js/clmtrackr.min.js"></script>
+    <script src="./js/model/model_pca_20_svm.js"></script>
+    <script defer="" src="./js/main.js"></script>
   </head>
-  <body style="margin:0px; overflow:hidden;">
-    <script src="main.js"></script>
+  <body>
+    <div id="wrapper">
+      <div id="inner">
+        <div id="drawArea"><img id="loading" src="./images/loading.svg" alt="">
+          <video id="video"></video>
+          <canvas id="wireframe" style="visibility:hidden" name="wireframe"></canvas>
+          <canvas id="deco"></canvas>
+        </div>
+        <div id="ui">
+        </div>
+      </div>
+    </div>
   </body>
-  <canvas width="1920" height="1020" style="width: 880px; height: 660px; position: absolute; top: 0px; left: 0px; margin-left: -234px; margin-top: 0px;"></canvas>
-  <video autoplay="" muted="" playsinline="" style="width: 880px; height: 660px; position: absolute; top: 0px; left: 0px; z-index: -2; margin-left: -234px; margin-top: 0px;"></video>
 </html>
