@@ -60,7 +60,7 @@ circle.push({x:40,y:40,radius:50});
     // MediaStream APIでWebカメラへアクセス
     navigator.getUserMedia({
         video: true,
-        audio: true
+        audio: false
       },
       function (mediaStream) {
         // videoのメタデータの取得が成功
@@ -179,7 +179,7 @@ circle.push({x:40,y:40,radius:50});
 
         var x = FacePos[33][0];       var y = FacePos[33][1]-100;
         var num = Math.floor( Math.random() * (9999 + 1 - 1) ) + 0;
-        decoCanvasContext.font= 'bold 5vw FontScouter';
+        decoCanvasContext.font= 'bold 20px FontScouter';
         decoCanvasContext.fillStyle = 'rgba(0,255,0,0.8)';
 
         if(y > 50)  decoCanvasContext.fillText(num,x,y);
@@ -197,7 +197,7 @@ circle.push({x:40,y:40,radius:50});
 
         var FacePos = ctrack.getCurrentPosition();
         var x = FacePos[33][0];       var y = FacePos[33][1]-100;
-        decoCanvasContext.font= 'bold 5vw FontScouter';
+        decoCanvasContext.font= 'bold 20px FontScouter';
         decoCanvasContext.fillStyle = 'rgba(0,255,0,0.8)';
 
         if(y > 50)  decoCanvasContext.fillText(currentScore,x,y);
@@ -294,21 +294,20 @@ circle.push({x:40,y:40,radius:50});
   }
 
   function drawText(label){
-    decoCanvasContext.font= 'bold 3vw FontScouter';
+    decoCanvasContext.font= 'bold 15px FontScouter';
     decoCanvasContext.fillStyle = 'rgba(0,255,0,0.8)';
     switch(label){
       case 1:
-        decoCanvasContext.fillText('Measuring. . .',decoCanvas.width*7/10,(9*decoCanvas.height)/10);
+        decoCanvasContext.fillText('Measuring. . .',decoCanvas.width*1/5,(9*decoCanvas.height)/10);
       break;
       case 2:
-        decoCanvasContext.fillText('Success.',decoCanvas.width*4/5,(9*decoCanvas.height)/10);
+        decoCanvasContext.fillText('Success.',decoCanvas.width*1/5,(9*decoCanvas.height)/10);
       break;
       case 3:
-        decoCanvasContext.fillText('Failed. . .',decoCanvas.width*4/5,(9*decoCanvas.height)/10);
+        decoCanvasContext.fillText('Failed. . .',decoCanvas.width*1/5,(9*decoCanvas.height)/10);
       break;
       case 4:
-        decoCanvasContext.fillText('Touch!this!screen',decoCanvas.width*2/5,(9*decoCanvas.height)/10);
-        decoCanvasContext.fillText('to!measure!the!power. . .',decoCanvas.width*2/5,30+(9*decoCanvas.height)/10);
+        decoCanvasContext.fillText('Touch!this!screen',decoCanvas.width*1/5,(9*decoCanvas.height)/10);
       break;
       default:
       break;
