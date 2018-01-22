@@ -26,6 +26,13 @@ function enablestart() {
 }
 
 function adjustVideoProportions() {
+   // resize overlay and video if proportions of video are not 4:3
+   // keep same height, just change width
+   /*var proportion = vid.videoWidth/vid.videoHeight;
+   vid_width = Math.round(vid_height * proportion);
+   vid.width = vid_width;
+   overlay.width = vid_width;
+   deco.width = vid_width;*/
    // videoのサイズを取得
    var videoW = vid.clientWidth;
    var videoH = vid.clientHeight;
