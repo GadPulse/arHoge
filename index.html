@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Souter? demo</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Face tracker</title>
+    <meta charset="utf-8">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/stats.min.js"></script>
-    <script src="./js/clmtrackr.min.js"></script>
-    <script src="./js/model/model_pca_20_svm.js"></script>
-    <script defer="" src="./js/main.js"></script>
   </head>
   <body>
-    <div id="wrapper">
-      <div id="inner">
-        <div id="drawArea"><img id="loading" src="./images/loading.svg" alt="">
-          <video id="video"></video>
-          <canvas id="wireframe" style="visibility:hidden" name="wireframe"></canvas>
-          <canvas id="deco"></canvas>
-        </div>
-        <div id="ui">
-          <button id="facewire" class="square_btn">表示切り替え</button>
-        </div>
-      </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/clmtrackr.min.js"></script>
+    <script src="./js/Stats.js"></script>
+    <div id="content">
+      <h2>Scouter? demo</h2>
+      <div id="container">
+        <video id="videoel" width="400" height="300" preload="auto" loop="" playsinline="" autoplay=""></video>
+        <canvas id="overlay" width="400" height="300" style="visibility:hidden"></canvas>
+        <canvas id="deco" width="400" height="300"></canvas>
+      </div><br>
+      <input id="startbutton" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" style="width: 10vw;" class="btn">
+      <button id="facewire" style="width: 13vw;" class="square_btn">表示切り替え</button>
+      <script src="./js/main.js"></script>
     </div>
   </body>
 </html>
