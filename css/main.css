@@ -1,5 +1,6 @@
 
 body {
+  -webkit-text-size-adjust:100%;
       background: #222;
       color: #fff;
       overflow-x: hidden;
