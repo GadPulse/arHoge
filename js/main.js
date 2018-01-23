@@ -69,7 +69,7 @@ function gumSuccess( stream ) {
 }
 
 function gumFail() {
-        alert("There was some problem trying to fetch video from your webcam, using a fallback video instead.");
+        alert("There was some problem trying to fetch video from your webcam.");
 }
 
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
@@ -81,7 +81,7 @@ if (navigator.mediaDevices) {
 } else if (navigator.getUserMedia) {
         navigator.getUserMedia({video : true}, gumSuccess, gumFail);
 } else {
-        alert("Your browser does not seem to support getUserMedia, using a fallback video instead.");
+        alert("Your browser does not seem to support getUserMedia.");
 }
 
 vid.addEventListener('canplay', enablestart, false);
