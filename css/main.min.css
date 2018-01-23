@@ -1,0 +1,4 @@
+#deco,#overlay{position:absolute;top:0;left:0}.hide,.nogum{display:none}body{background:#222;color:#fff;overflow-x:hidden}#overlay{z-index:1}#container{position:relative;width:100%;justify-content:center;align-items:center;text-align:center}#content{max-width:100%;justify-content:center;align-items:center;text-align:center}#deco{z-index:2;height:auto;background-color:rgba(0,255,0,.15)}h2{font-weight:400}.btn{font-family:Lato;font-size:16px}.nohide{display:block}/*!
+ * "DSEG14ModernMini-Regular" is lisenced under the SIL Open Font License 1.1
+ * by けしかん http://www.keshikan.net/fonts.html
+ */@font-face{font-family:FontScouter;src:url(../font/DSEG14ModernMini-Regular.woff) format('woff'),url(../font/DSEG14ModernMini-Regular.ttf) format('truetype')}.scoutercharacter{font-family:FontScouter;font-size:12px}.square_btn{display:inline-block;padding:.5em 1em;text-decoration:none;background:#668ad8;color:#FFF;border-bottom:solid 4px #627295;border-radius:3px}
